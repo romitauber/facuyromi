@@ -1,0 +1,301 @@
+:root {
+    --principal: 'Playfair Display', serif;
+    --secundaria: 'Dancing Script', cursive;
+    --cuerpo: 'Nunito', sans-serif;
+    --verdeOscuro: black;
+    --beige: rgba(250, 241, 230, 0.6);
+    --blanco: #FDFAF6;
+    --mint: #E4EFE7;
+    --gold: #EBA83A;
+    --wegreen: rgba(206, 229, 208 , 0.6);
+    --webeige: rgba(243, 240, 215);
+    --wecamel: #E0C097;
+    --wecoral: rgba(255, 120, 120, 0.2);
+
+}
+
+/*GENERAL*/
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/Sin\ título-3_Mesa\ de\ trabajo\ 1.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+footer img {
+    width: 105%;
+    margin-left: -0.5rem;
+}
+
+footer {
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--principal);
+    font-size: 1.75rem;
+    color: var(--wecamel);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: var(--secundaria);
+    font-size: 3rem;
+    color: var(--verdeOscuro);
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+p {
+    font-family: var(--cuerpo);
+    color: var(--verdeOscuro);
+    font-size: 1rem;
+}
+
+a, .ver {
+    text-decoration: none;
+    background-color: var(--wecamel);
+    color: var(--blanco);
+    border-radius: 1.25rem;
+    font-size: 1.25rem;
+    font-family: var(--cuerpo);
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-weight: bold;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    border: none;
+    cursor: pointer;
+    
+}
+
+a:hover, .ver:hover {
+    background-color: var(--blanco);
+    color: var(--wecamel);
+    border: 0.75px solid var(--wecamel);
+    
+}
+
+.civil img, .fiesta img, .gift img, .asistencia img {
+    width: 25%;
+}
+
+
+
+.principal {
+    width: 100%;
+    height: 100%;
+    
+}
+/* Fechas */
+
+.fechas {
+    padding: 0rem;
+    margin-top: 45rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    background-color: var(--wegreen);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    
+}
+
+.civil, .fiesta, .dressCode h1,
+.gralidades, .gift, .asistencia {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dressCode, .asistencia {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: var(--beige);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    
+}
+
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.nosotros img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.mujeres, .hombres {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mujeres h2 {
+    color: lightcoral;
+    font-size: 2rem;
+}
+
+.hombres h2 {
+    color: steelblue;
+    font-size: 2rem;
+}
+
+.gift {
+    margin-top: 1rem;
+    background-color: var(--wegreen);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    position: relative;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    
+}
+
+.datosBancarios {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--webeige);
+    border-radius: 0.5rem;
+    width: 85%;
+    border: 0.75px solid var(--wecamel);
+}
+
+
+.datosBancarios h1, .datosBancarios p {
+    margin: 0.5rem;
+}
+
+.cerrar {
+    background-color: var(--webeige);
+    color: var(--wecamel);
+    border: none;
+    font-weight: 400px;
+    padding-top: 1rem;
+    margin-right: 1.5rem;
+    align-self: flex-end;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cerrar:hover {
+    color: var(--wecoral);
+    font-size: 1.5rem ;
+    padding-top: 0.5rem ;
+}
+
+.pc {
+    display: none;
+}
+
+
+
+/* Media Queries Tamaño PC*/
+@media (min-width: 760px) {
+
+    
+body {
+    background-image: url(/img/Sin\ título-1_Mesa\ de\ trabajo\ 1.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.fechas {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-left: 3.9rem;
+    margin-right: 3.9rem;
+    margin-top: 45rem;
+    
+}
+
+a {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.dressCode {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding-left: 10rem;
+    padding-right: 10rem;
+    gap: 1.75rem;
+    margin-left: 3.9rem;
+    margin-right: 3.9rem;
+
+}
+
+.dressCode h1,
+.gralidades {
+    grid-column: 1/3;
+}
+
+.gift, .asistencia {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 3.9rem;
+    margin-right: 3.9rem;
+}
+
+
+.gift img, .asistencia img {
+    width: 12%;
+}
+
+.datosBancarios {
+    width: 30%;
+}
+
+.principal {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.mb {
+    display: none;
+}
+
+.pc {
+    display: block;
+}
+
+.nosotros {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1rem;
+    margin-left: 3.9rem;
+    margin-right: 3.9rem;
+}
+.nosotros img {
+    width: 98%;
+}
+
+footer img {
+    width: 110%;
+    margin-left: -0.5rem;
+}
+}
+
