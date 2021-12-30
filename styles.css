@@ -92,6 +92,10 @@ a:hover, .ver:hover {
     height: 100%;
     
 }
+.buzon {
+    font-weight: bold;
+}
+    
 /* Fechas */
 
 .fechas {
